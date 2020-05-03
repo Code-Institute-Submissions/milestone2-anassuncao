@@ -3,12 +3,15 @@
 
 body {
     font-family: "Noto Sans JP", sans-serif;
+    background-image: url("../images/servers.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /*------------------------------------Header-----------------------------*/
 
 header {
-    background-image: url("../images/servers.jpg");
     background-size: cover;
     color: #F2F2F2;
     min-height: 400px;
@@ -43,7 +46,7 @@ header {
 /*------------------------------------Nav Bar-----------------------------*/
 
 .bg-light {
-    background-color: #405F73!important;
+    background-color: rgba(25, 37, 45, 0.85)!important;
 }
 
 .navbar-light a {
@@ -51,7 +54,7 @@ header {
 }
 
 .navbar-light a:hover {
-    color: 	#282828!important;
+    color: 	#658DA6!important;
 }
 /*I used the !important because the default styling of the navbar-light used it also and it was the only way I could think of to make this work.*/
 
@@ -63,15 +66,17 @@ header {
 }
 
 .active i {
-    color: 	#282828;
+    color: 	#658DA6;
 }
 
 
 /*------------------------------------About Me-----------------------------*/
 
+
 .about-me {
-    background-color: #F2F2F2;
+    background-color: rgba(80,80,80,0.85);
     font-family: "Noto Sans JP", sans-serif;
+    color: #F2F2F2;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 15px;
@@ -87,7 +92,7 @@ header {
   border-width: 1px;
   border-radius: 50%;
   margin: 0 auto;
-  box-shadow: 4px 4px 4px 4px #405f73;
+  box-shadow: 4px 4px 4px 4px #021526;
   margin-top: 20px;
 }
 
@@ -116,6 +121,11 @@ header {
 
 /*------------------------------------Resume-----------------------------*/
 
+.resume {
+    background-color: rgba(80,80,80,0.85);
+    color: #F2F2F2;
+}
+
 .resume > h3 {
     margin-top: 30px;
     margin-left: 40px;
@@ -133,6 +143,7 @@ header {
     position: relative;
     border-left: 1px solid;
     border-left-color: #8BBBD9;
+    margin: 20px;
 }
 
 .timeline-item p {
@@ -242,7 +253,7 @@ information*/
 /*------------------------------------Footer-----------------------------*/
 
 footer {
-    background-color: #405F73;
+    background-color: rgba(25, 37, 45, 0.85);
     color: #F2F2F2;
     min-height: 60px;
     margin: 0;
