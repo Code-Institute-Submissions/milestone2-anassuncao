@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <title>Andre Saramago Resume</title>
 </head>
 <body>
@@ -53,46 +58,74 @@
                 <div class="container-fluid">
                     <div class="row resume-content">
                         <div class="col-12 col-lg-4">
-                            <div class="history-items">
-                                <div class="timeline-item" data-dates="04/2019 - Present Day">
+                            <!--<div class="history-items">-->
+                            <!-- List group -->
+                            <div class="list-group" id="myList">
+                                <a class="" data-toggle="list" href="#home" role="tab">VMware Infrastructure Support Team Leader</a>
+                                <a class="" data-toggle="list" href="#profile" role="tab">Windows & VMware Infrastructure Administration</a>
+                                <a class="" data-toggle="list" href="#messages" role="tab">VMware Infrastructure Administration</a>
+                                <a class="" data-toggle="list" href="#settings" role="tab">Systems and Networks Administrator </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">    
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home" role="tabpanel">Aqui aparece o resto da info de cada role</div>
+                                <div class="tab-pane" id="profile" role="tabpanel">Aqui aparece o resto da info de cada role 1</div>
+                                <div class="tab-pane" id="messages" role="tabpanel">Aqui aparece o resto da info de cada role 2</div>
+                                <div class="tab-pane" id="settings" role="tabpanel">Aqui aparece o resto da info de cada role 3</div>
+                            </div>
+
+                            <!--
+                                <ul type="none">
+                                    <li>
+                                        <h5><a href="#"><i class="fas fa-ellipsis-v"></i></a>  VMware Infrastructure Support Team Leader</h5>
+                                    </li><br>
+                                    <li>
+                                        <h5>Windows & VMware Infrastructure Administration  <i class="fas fa-arrow-right"></i></h5>
+                                    </li><br>
+                                    <li>
+                                        <a href="#"><h5>VMware Infrastructure Administration  <i class="fas fa-arrow-alt-circle-right"></i></h5></a>
+                                    </li><br>
+                                    <li>
+                                        <h5>Systems and Networks Administrator  <i class="fas fa-arrow-alt-circle-right"></i></h5>
+                                    </li>
+                                </ul>-->
+                                <!--<div class="timeline-item" data-dates="04/2019 - Present Day">
                                     <h5>VMware Infrastructure Support Team Leader</h5>
-                                   <!-- <p>EPO – European Patent Office (INDRA)</p>-->
+                                    <p>EPO – European Patent Office (INDRA)</p>
                                 </div>
                                 <div class="timeline-item" data-dates="01/2016 - 04/2019">
                                     <h5>Windows & VMware Infrastructure Administration</h5>
-                                   <!-- <p>Caixa Geral de Depósitos (DXC-Technology)</p>-->
+                                    <p>Caixa Geral de Depósitos (DXC-Technology)</p>
                                 </div>
                                 <div class="timeline-item" data-dates="01/2015 - 12/2015">
                                     <h5>VMware Infrastructure Administration</h5>
-                                   <!-- <p>Novo Banco SI (Reditus)</p>-->
+                                    <p>Novo Banco SI (Reditus)</p>
                                 </div>
                                 <div class="timeline-item" data-dates="11/2011 - 12/2014">
                                     <h5>Windows & VMware Infrastructure Administration</h5>
-                                   <!-- <p>Caixa Geral de Depósitos (HP)</p>-->
+                                    <p>Caixa Geral de Depósitos (HP)</p>
                                 </div>
                                 <div class="timeline-item" data-dates="09/1997- 04/2002">
                                     <h5>Systems and Networks Administrator</h5>
-                                  <!--  <p>Cormoran (Portugal) and 1K4S (Angola)</p>-->
+                                    <p>Cormoran (Portugal) and 1K4S (Angola)</p>
                                 </div>
                                 <div class="timeline-item" data-dates="09/2003 - 11/2009">
                                     <h5>Systems and Networks Administrator</h5>
-                                    <!--<p>iNOK Consulting</p>-->
+                                    <p>iNOK Consulting</p>
                                 </div>
                                 <div class="timeline-item" data-dates="06/2002 - 08/2003">
                                     <h5>Systems and Networks Administrator</h5>
-                                  <!--  <p>2AS</p>-->
+                                    <p>2AS</p>
                                 </div>
                                 <div class="timeline-item" data-dates="09/1997- 04/2002">
                                     <h5>Systems and Networks Administrator</h5>
-                                   <!-- <p>Hiperbit</p>-->
-                                </div>
-                            </div>
+                                    <p>Hiperbit</p>
+                                </div> -->
+                            
                         </div>
-                        <div class="col-12 col-lg-4">
-                            <div class="history-items">
-                                
-                            </div>
-                        </div>
+                      
                         <div class="col-12 col-lg-4">
                             <div class="history-items last-column">
                                 
