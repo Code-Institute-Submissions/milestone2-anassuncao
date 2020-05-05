@@ -70,65 +70,17 @@
                         <div class="col-12 col-lg-4">    
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane active" id="home" role="tabpanel">Aqui aparece o resto da info de cada role</div>
+                                <div class="tab-pane active" id="home" role="tabpanel">Aqui aparece o resto da info de cada role
+                                    <div id="map"></div>
+                                </div>
                                 <div class="tab-pane" id="profile" role="tabpanel">Aqui aparece o resto da info de cada role 1</div>
                                 <div class="tab-pane" id="messages" role="tabpanel">Aqui aparece o resto da info de cada role 2</div>
                                 <div class="tab-pane" id="settings" role="tabpanel">Aqui aparece o resto da info de cada role 3</div>
                             </div>
-
-                            <!--
-                                <ul type="none">
-                                    <li>
-                                        <h5><a href="#"><i class="fas fa-ellipsis-v"></i></a>  VMware Infrastructure Support Team Leader</h5>
-                                    </li><br>
-                                    <li>
-                                        <h5>Windows & VMware Infrastructure Administration  <i class="fas fa-arrow-right"></i></h5>
-                                    </li><br>
-                                    <li>
-                                        <a href="#"><h5>VMware Infrastructure Administration  <i class="fas fa-arrow-alt-circle-right"></i></h5></a>
-                                    </li><br>
-                                    <li>
-                                        <h5>Systems and Networks Administrator  <i class="fas fa-arrow-alt-circle-right"></i></h5>
-                                    </li>
-                                </ul>-->
-                                <!--<div class="timeline-item" data-dates="04/2019 - Present Day">
-                                    <h5>VMware Infrastructure Support Team Leader</h5>
-                                    <p>EPO – European Patent Office (INDRA)</p>
-                                </div>
-                                <div class="timeline-item" data-dates="01/2016 - 04/2019">
-                                    <h5>Windows & VMware Infrastructure Administration</h5>
-                                    <p>Caixa Geral de Depósitos (DXC-Technology)</p>
-                                </div>
-                                <div class="timeline-item" data-dates="01/2015 - 12/2015">
-                                    <h5>VMware Infrastructure Administration</h5>
-                                    <p>Novo Banco SI (Reditus)</p>
-                                </div>
-                                <div class="timeline-item" data-dates="11/2011 - 12/2014">
-                                    <h5>Windows & VMware Infrastructure Administration</h5>
-                                    <p>Caixa Geral de Depósitos (HP)</p>
-                                </div>
-                                <div class="timeline-item" data-dates="09/1997- 04/2002">
-                                    <h5>Systems and Networks Administrator</h5>
-                                    <p>Cormoran (Portugal) and 1K4S (Angola)</p>
-                                </div>
-                                <div class="timeline-item" data-dates="09/2003 - 11/2009">
-                                    <h5>Systems and Networks Administrator</h5>
-                                    <p>iNOK Consulting</p>
-                                </div>
-                                <div class="timeline-item" data-dates="06/2002 - 08/2003">
-                                    <h5>Systems and Networks Administrator</h5>
-                                    <p>2AS</p>
-                                </div>
-                                <div class="timeline-item" data-dates="09/1997- 04/2002">
-                                    <h5>Systems and Networks Administrator</h5>
-                                    <p>Hiperbit</p>
-                                </div> -->
-                            
                         </div>
                       
                         <div class="col-12 col-lg-4">
-                            <div class="history-items last-column">
-                                
+                            <div id="map">
                             </div>
                         </div>
                     </div>
@@ -136,7 +88,6 @@
             </section>
         </div>
     </div>
-      
 
    <footer class="container-fluid">
         <div id="footer-details" class="row">
@@ -154,6 +105,20 @@
             </div>
         </div>
     </footer>
+
+     <script>
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: {
+                        lat: 52.039673, //Coordenadas do EPO pois vai ser o local por default que vai aparecer. I hope...
+                        lng: 4.337959
+                    }
+            });
+        }
+</script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8W8vqlR-jlCx_uxHZuFIjE8lrwhCd6a8&callback=initMap"></script>
 
 </body>
 </html>
