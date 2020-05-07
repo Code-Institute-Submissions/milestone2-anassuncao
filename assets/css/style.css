@@ -3,15 +3,48 @@
 
 body {
     font-family: "Noto Sans JP", sans-serif;
+   
+}
+
+.all-page-content {
     background-image: url("../images/servers.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-/*------------------------------------Header-----------------------------*/
+/*------------------------------------Nav Bar-----------------------------*/
 
-header {
+.bg-light {
+    background-color: rgb(25, 37, 45)!important;
+}
+
+.navbar-light a {
+    color: #F2F2F2!important;
+}
+
+.navbar-light a:hover {
+    color: 	#7091b2!important;
+}
+/*I used the !important because the default styling pythonof the navbar-light used it also and it was the only way I could think of to make this work.*/
+
+
+.nav-link i {
+    margin-right: 8px;
+    margin-left: 10px;
+    color: #F2F2F2;
+}
+
+.active i {
+    color: 	#7091b2;
+}
+
+
+/*------------------------------------Content Section - About Me-----------------------------*/
+
+
+.details-container {
+    padding-top: 70px;
     background-size: cover;
     color: #F2F2F2;
     min-height: 400px;
@@ -21,13 +54,9 @@ header {
     padding-top: 20px;
 }
 
-.details-container {
-    padding-top: 70px;
-}
-
 .header-details {
     padding: 20px;
-    background-color: rgba(80,80,80,0.85);
+    background-color: rgba(25,37,45,0.85);
     display: inline-block;
     border-width: 3px;
 }
@@ -43,38 +72,12 @@ header {
 }
 
 
-/*------------------------------------Nav Bar-----------------------------*/
 
-.bg-light {
-    background-color: rgba(25, 37, 45, 0.85)!important;
-}
-
-.navbar-light a {
-    color: #F2F2F2!important;
-}
-
-.navbar-light a:hover {
-    color: 	#658DA6!important;
-}
-/*I used the !important because the default styling of the navbar-light used it also and it was the only way I could think of to make this work.*/
+/*---------------------------About Me------------------------*/
 
 
-.nav-link i {
-    margin-right: 8px;
-    margin-left: 10px;
-    color: #F2F2F2;
-}
-
-.active i {
-    color: 	#658DA6;
-}
-
-
-/*------------------------------------About Me-----------------------------*/
-
-
-.about-me {
-    background-color: rgba(80,80,80,0.85);
+.about-text {
+    background-color: rgba(25, 37, 45, 0.85);
     font-family: "Noto Sans JP", sans-serif;
     color: #F2F2F2;
     padding-top: 30px;
@@ -122,63 +125,36 @@ header {
 /*------------------------------------Resume-----------------------------*/
 
 .resume {
-    background-color: rgba(80,80,80,0.85);
+    background-color: rgba(25, 37, 45, 0.85);
     color: #F2F2F2;
 }
 
-.resume > h3 {
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-bottom: 20px;
+
+.roles {
+    color: #f2f2f2;
+    margin: 30px;
 }
+
+.roles:hover {
+    text-decoration: none;
+    color: #7091b2;
+}
+
+.list-group {
+    margin: 20px;
+}
+
 
 .resume-content .col-lg-4 {
     padding-left: 30px;
     margin-bottom: 30px;
 }
 
-/*The folowing code untill the line 165 was taken from the Code Institute ucd-resume and then modified to match the styling of the current project.*/
-.timeline-item {
-    padding: 2em 1em 0em 1em;
-    position: relative;
-    border-left: 1px solid;
-    border-left-color: #8BBBD9;
-    margin: 20px;
+
+#map {
+    height: 100%;
 }
 
-.timeline-item p {
-    padding-bottom: 12px;
-    margin: 0;
-}
-
-.timeline-item:before {
-    content: attr(data-dates);
-    position: absolute;
-    left: 2.5em;
-    top: 0.5em;
-    display: block;
-    font-family: "Noto Sans JP", sans-serif;
-    font-weight: 500;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
-}
-
-.timeline-item:after {
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 0.7em;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-    background-color: #8BBBD9;
-}
-
-.history-items {
-    margin-top: 30px;
-}
 
 /*The following media query allows the "vertical timeline" to be continuous in smaller screens when all the work history appears in only one column. Without this there were gaps between the 
 information*/
@@ -253,7 +229,7 @@ information*/
 /*------------------------------------Footer-----------------------------*/
 
 footer {
-    background-color: rgba(25, 37, 45, 0.85);
+    background-color: rgb(25, 37, 45);
     color: #F2F2F2;
     min-height: 60px;
     margin: 0;
@@ -272,7 +248,7 @@ footer h5 {
 }
 
 footer h5 i {
-    color: #8BBBD9;
+    color: #7091b2;
     margin-right: 5px;
     margin-left: 5px;
     display: inline;
@@ -283,7 +259,7 @@ footer h5 i:hover {
 }
 
 .in-logo {
-    color: #8BBBD9;
+    color: #7091b2;
 }
 
 footer a:hover {

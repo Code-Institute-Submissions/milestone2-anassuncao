@@ -36,60 +36,79 @@
             </ul>
         </div>
     </nav>
-
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-12 details-container">
-                <div class="header-details">
-                    <h1>André Saramago</h1>
-                    <h3>IT Infrastructure Manager</h3>
+    <section class="all-page-content">
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-12 details-container">
+                    <div class="header-details">
+                        <h1>André Saramago</h1>
+                        <h3>IT Infrastructure Manager</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
 
 
 <!--I took this section of the code from the UCD-Resume project from a previous lesson of the course. I then added/changed the styling to match my website.-->
-    <div class="container-fluid">
-        <div class="history-container content-container">
-            <section class="resume">
-                <h3>Work History</h3>
-                <div class="container-fluid">
-                    <div class="row resume-content">
-                        <div class="col-12 col-lg-4">
-                            <!--<div class="history-items">-->
-                            <!-- List group -->
-                            <div class="list-group" id="myList">
-                                <a class="" data-toggle="list" href="#home" role="tab">VMware Infrastructure Support Team Leader</a>
-                                <a class="" data-toggle="list" href="#profile" role="tab">Windows & VMware Infrastructure Administration</a>
-                                <a class="" data-toggle="list" href="#messages" role="tab">VMware Infrastructure Administration</a>
-                                <a class="" data-toggle="list" href="#settings" role="tab">Systems and Networks Administrator </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4">    
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="home" role="tabpanel">Aqui aparece o resto da info de cada role
-                                    <div id="map"></div>
+        <div class="container-fluid">
+            <div class="history-container content-container">
+                <section class="resume">
+                    <h2>Work History</h2>
+                    <div class="container-fluid">
+                        <div class="row resume-content">
+                            <div class="col-12 col-lg-4">
+                                <!--<div class="history-items">-->
+                                <!-- List group -->
+                                <div class="list-group" id="myList">
+                                    <a class="roles" data-toggle="list" href="#team-lead" role="tab"><h5>Infrastructure Support Team Leader</h5></a>
+                                    <a class="roles" data-toggle="list" href="#vmw-inf-admin" role="tab"><h5>Windows & VMware Infrastructure Administration</h5></a>
+                                    <a class="roles" data-toggle="list" href="#inf-admin" role="tab"><h5>VMware Infrastructure Administration</h5></a>
+                                    <a class="roles" data-toggle="list" href="#sys-admin" role="tab"><h5>Systems and Networks Administrator</h5></a>
                                 </div>
-                                <div class="tab-pane" id="profile" role="tabpanel">Aqui aparece o resto da info de cada role 1</div>
-                                <div class="tab-pane" id="messages" role="tabpanel">Aqui aparece o resto da info de cada role 2</div>
-                                <div class="tab-pane" id="settings" role="tabpanel">Aqui aparece o resto da info de cada role 3</div>
                             </div>
-                        </div>
-                      
-                        <div class="col-12 col-lg-4">
-                            <div id="map">
+                            <div class="col-12 col-lg-4">    
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="team-lead" role="tabpanel">
+                                        <h5>Infrastructure Support Team Leader</h5>
+                                        <p>Since April 2019</p>
+                                        <h6>EPO - European Patent Office</h6>
+                                        <p>Main tasks and challenges:</p>
+                                        <ul>
+                                            <li>Migration Projects: VMware 6.0 to 6.7</li>
+                                            <li>Architecture & Implementation Projects: New Hardware to reinforce Current Infrastructure. New Hardware to Build New Infrastructure.</li>
+                                            <li>Support for VMware Infrastructures: Workflows definition and implementation.</li>
+                                            <li>Interaction with several support teams: Windows Support, Linux Support, Networks and Communications, Data Base Administration, Application stakeholders.</li>
+                                        </ul>                                        
+                                    </div>
+                                    <div class="tab-pane" id="vmw-inf-admin" role="tabpanel">
+                                        <h5>Windows & VMware Infrastructure Administration</h5>
+                                            <p>November 2011 to December 2014 and January 2016 to April 2019</p>
+                                            <h6>Caixa Geral de Depósitos (Portuguese Public Bank)</h6>
+                                            <p>Main tasks and challenges:</p>
+                                            <ul>
+                                                <li>Migration Projects: VMware 5.1 to 6.0; Hyper-V 2012 to VMware 6.0; VMware 6.0 to 6.5.</li>
+                                                <li>Architecture & Implementation Projects: VMware Clusters for: MS Exchange and several other applications and environments.</li>
+                                                <li>Implementation Projects: Windows 2012 R2 Deduplication. PoC Windows 2016.</li>
+                                                <li>Level 3 Support for both the VMware & Windows Infrastructures.</li>
+                                            </ul>  
+                                    </div>
+                                    <div class="tab-pane" id="inf-admin" role="tabpanel">Aqui aparece o resto da info de cada role 2</div>
+                                    <div class="tab-pane" id="sys-admin" role="tabpanel">Aqui aparece o resto da info de cada role 3</div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-12 col-lg-4">
+                                <div id="map"></div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
-    </div>
-
-   <footer class="container-fluid">
+    </section>
+    <footer class="container-fluid">
         <div id="footer-details" class="row">
             <div class="col-12 col-lg-3">
                 <h5><i class="fas fa-phone-square"></i>+31 616 316 245</h5>
@@ -106,19 +125,18 @@
         </div>
     </footer>
 
-     <script>
-        function initMap() {
-        var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
-                center: {
-                        lat: 52.039673, //Coordenadas do EPO pois vai ser o local por default que vai aparecer. I hope...
-                        lng: 4.337959
-                    }
-            });
-        }
-</script>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8W8vqlR-jlCx_uxHZuFIjE8lrwhCd6a8&callback=initMap"></script>
+   <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 52.039673, lng: 4.337959},
+          zoom: 11
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8W8vqlR-jlCx_uxHZuFIjE8lrwhCd6a8&callback=initMap"></script>
 
 </body>
 </html>
+
+
