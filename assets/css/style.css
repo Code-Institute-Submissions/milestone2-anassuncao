@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400;1,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap');
 
 body {
     font-family: "Titillium Web", sans-serif;
@@ -163,6 +162,21 @@ body {
 .dates-list-cgd {
     margin-left: 23px;
     font-weight: 200;
+}
+
+#content-inok, #content-2as, #content-1k4s, #content-hiperbit {
+    background: rgba(25, 37, 45, 0.8);
+}
+
+.know-more {
+    font-size: 15px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.last-role {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 #map {

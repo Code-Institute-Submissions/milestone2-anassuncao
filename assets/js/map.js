@@ -1,8 +1,3 @@
-/*
-$(document).ready(function(){
-    COLOCAR AQUI TUDO O QUE QUERO FAZER EM JQUERY
-})*/
-
 var map;
 
 function initMap() {

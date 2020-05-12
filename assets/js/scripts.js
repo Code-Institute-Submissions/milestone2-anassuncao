@@ -1,0 +1,33 @@
+$(document).ready(function(){
+  $(".roles").click(function(){
+    $("#content-1k4s").hide();
+    $("#content-inok").hide();
+    $("#content-2as").hide();
+    $("#content-hiperbit").hide();
+  });
+  $("#1k4s").click(function(){
+      $("#content-1k4s").show();
+      $("#content-inok").hide();
+      $("#content-2as").hide();
+      $("#content-hiperbit").hide();
+  });
+   $("#inok").click(function(){
+      $("#content-inok").show();
+      $("#content-1k4s").hide();
+      $("#content-2as").hide();
+      $("#content-hiperbit").hide();
+  });
+  $("#2as").click(function(){
+      $("#content-2as").show();
+      $("#content-1k4s").hide();
+      $("#content-inok").hide();
+      $("#content-hiperbit").hide();
+  });
+  $("#hiperbit").click(function(){
+      $("#content-hiperbit").show()
+      $("#content-1k4s").hide();
+      $("#content-inok").hide();
+      $("#content-2as").hide();
+  });
+});
+

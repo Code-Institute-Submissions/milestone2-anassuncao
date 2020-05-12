@@ -11,9 +11,11 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
 
     <title>Andre Saramago Resume</title>
+    
 </head>
 <body>
 
@@ -58,15 +60,15 @@
                         <div class="row resume-content">
                             <div class="col-12 col-lg-4">
                                 <div class="list-group" id="myList" role="tablist">
-                                    <a class="roles" data-toggle="list" href="#team-lead" role="tab"><h5>Infrastructure Support Team Leader</h5></a>
-                                    <a class="roles" data-toggle="list" href="#vmw-inf-admin" role="tab"><h5>Windows & VMware Infrastructure Administration</h5></a>
-                                    <a class="roles" data-toggle="list" href="#inf-admin" role="tab"><h5>VMware Infrastructure Administration Team Leader</h5></a>
-                                    <a class="roles" data-toggle="list" href="#sys-admin" role="tab"><h5>Systems and Networks Administrator</h5></a>
+                                    <a class="roles" data-toggle="list" href="#list-team-lead" role="tab" aria-controls="team-lead"><h5>Infrastructure Support Team Leader</h5></a>
+                                    <a class="roles" data-toggle="list" href="#list-vmw-inf-admin" role="tab" aria-controls="vmw-inf-admin"><h5>Windows & VMware Infrastructure Administration</h5></a>
+                                    <a class="roles" data-toggle="list" href="#list-inf-admin" role="tab" aria-controls="inf-admin"><h5>VMware Infrastructure Administration Team Leader</h5></a>
+                                    <a class="roles" data-toggle="list" href="#list-sys-admin" role="tab" aria-controls="sys-admin"><h5>Systems and Networks Administrator</h5></a>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">    
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="team-lead" role="tabpanel">
+                                    <div class="tab-pane active" id="list-team-lead" role="tabpanel" aria-labelledby="list-team-lead-list">
                                         <h5 class="role">Infrastructure Support Team Leader</h5>
                                         <h6><i class="fas fa-building"></i> EPO - European Patent Office - The Nederland</h6>
                                         <p class="dates-list"><i class="fas fa-calendar-week"></i> Since April 2019</p>
@@ -78,7 +80,7 @@
                                             <li>Interaction with several support teams: Windows Support, Linux Support, Networks and Communications, Data Base Administration, Application stakeholders.</li>
                                         </ul>                                        
                                     </div>
-                                    <div class="tab-pane" id="vmw-inf-admin" role="tabpanel">
+                                    <div class="tab-pane" id="list-vmw-inf-admin" role="tabpanel" aria-labelledby="list-vmw-inf-admin-list">
                                         <h5 class="role">Windows & VMware Infrastructure Administration</h5>
                                         <h6><i class="fas fa-building"></i> Caixa Geral de Depósitos (Portuguese Public Bank) - Portugal</h6>
                                                 <ul class="fa-ul dates-list-cgd">
@@ -93,7 +95,7 @@
                                                 <li>Level 3 Support for both the VMware & Windows Infrastructures.</li>
                                             </ul>  
                                     </div>
-                                    <div class="tab-pane" id="inf-admin" role="tabpanel">
+                                    <div class="tab-pane" id="list-inf-admin" role="tabpanel" aria-labelledby="list-inf-admin-list">
                                         <h5 class="role">VMware Infrastructure Administration Team Leader</h5>
                                             <h6><i class="fas fa-building"></i> Novo Banco Sistemas de Informação - Portugal</h6>
                                             <p class="dates-list"><i class="fas fa-calendar-week"></i> January to December 2015</p>
@@ -106,45 +108,53 @@
                                                 <li>Middle Range Infrastructure Teams Interaction.</li>
                                             </ul>
                                     </div>
-                                    <div class="tab-pane" id="sys-admin" role="tabpanel">
-                                        <h5 class="role">Systems and Networks Administrator</h5>
-                                            <h6><i class="fas fa-building"></i> 1K4S - Angola</h6>
-                                                <p class="dates-list"><i class="fas fa-calendar-week"></i> December 2009 to July 2011</p>
-                                                <p>Main tasks and challenges:</p>
-                                                    <ul class="tasks-list">
-                                                        <li>Systems and Network Infrastructure Consultant, Design, Implementation, Administration and Maintenance in Portugal and Angola.</li>
-                                                        <li>Data Centre Infrastructure Maintenance.</li>
-                                                        <li>Technological Renovation with Server and Desktop Virtualization. E-mail Consolidation. VPNs and internet access via Wimax communication systems.</li>
-                                                    </ul>    
+                                    <div class="tab-pane" id="list-sys-admin" role="tabpanel" aria-labelledby="list-sys-admin-list">
+                                        <h5 class="role last-role">Systems and Networks Administrator</h5>
+                                        <p class="know-more">Click on each company to know more.</p>
+                                            <h6 id="1k4s"><i class="fas fa-building"></i> 1K4S - Angola</h6>
+                                                <div id="content-1k4s">
+                                                    <p class="dates-list"><i class="fas fa-calendar-week"></i> December 2009 to July 2011</p>
+                                                    <p>Main tasks and challenges:</p>
+                                                        <ul class="tasks-list">
+                                                            <li>Systems and Network Infrastructure Consultant, Design, Implementation, Administration and Maintenance in Portugal and Angola.</li>
+                                                            <li>Data Centre Infrastructure Maintenance.</li>
+                                                            <li>Technological Renovation with Server and Desktop Virtualization. E-mail Consolidation. VPNs and internet access via Wimax communication systems.</li>
+                                                        </ul>
+                                                </div>
                                             
-                                            <h6><i class="fas fa-building"></i> iNOK Consulting - Portugal</h6>
-                                                <p class="dates-list"><i class="fas fa-calendar-week"></i> September 2003 to November 2009</p>
-                                                <p>Main tasks and challenges:</p>
-                                                    <ul class="tasks-list">
-                                                        <li>Systems and Network Infrastructure Implementation, Administration and Maintenance.</li>
-                                                        <li>Microsoft and VMware technology based Project Implementation at several clients: Instituto Português dos Resíduos, Agência Portuguesa do Ambiente, Instituto Português do Livro e da Biblioteca.</li>
-                                                        <li>Internetworking e VoIP Projects at several clients: Initiative Media, BES Investimento.</li>
-                                                        <li>Voice and Data Networks and Data Centre Project and Maintenance (Technological Renovation) at several clients: Badoca Park, Espanha & Associados, Mazars.</li>
-                                                    </ul>        
+                                            <h6 id="inok"><i class="fas fa-building"></i> iNOK Consulting - Portugal</h6>
+                                                <div id="content-inok">
+                                                    <p class="dates-list"><i class="fas fa-calendar-week"></i> September 2003 to November 2009</p>
+                                                    <p>Main tasks and challenges:</p>
+                                                        <ul class="tasks-list">
+                                                            <li>Systems and Network Infrastructure Implementation, Administration and Maintenance.</li>
+                                                            <li>Microsoft and VMware technology based Project Implementation at several clients: Instituto Português dos Resíduos, Agência Portuguesa do Ambiente, Instituto Português do Livro e da Biblioteca.</li>
+                                                            <li>Internetworking e VoIP Projects at several clients: Initiative Media, BES Investimento.</li>
+                                                            <li>Voice and Data Networks and Data Centre Project and Maintenance (Technological Renovation) at several clients: Badoca Park, Espanha & Associados, Mazars.</li>
+                                                        </ul>  
+                                                </div>      
                                             
-                                            <h6><i class="fas fa-building"></i> 2AS - Portugal</h6>
-                                                <p class="dates-list"><i class="fas fa-calendar-week"></i> June 2002 to August 2003</p>
-                                                <p>Main tasks and challenges:</p>
-                                                    <ul class="tasks-list">
-                                                        <li>Field Support to clients Systems and Communications Infrastructures.</li>
-                                                        <li>LAN Projects Design and Implementation.</li>
-                                                    </ul>
+                                            <h6 id="2as"><i class="fas fa-building"></i> 2AS - Portugal</h6>
+                                                <div id="content-2as">
+                                                    <p class="dates-list"><i class="fas fa-calendar-week"></i> June 2002 to August 2003</p>
+                                                    <p>Main tasks and challenges:</p>
+                                                        <ul class="tasks-list">
+                                                            <li>Field Support to clients Systems and Communications Infrastructures.</li>
+                                                            <li>LAN Projects Design and Implementation.</li>
+                                                        </ul>
+                                                </div>
                                                   
-                                            <h6><i class="fas fa-building"></i> Hiperbit - Portugal</h6>
-                                                <p class="dates-list"><i class="fas fa-calendar-week"></i> September 1997 to April 2002</p>
-                                                <p>Main tasks and challenges:</p>
-                                                    <ul class="tasks-list">
-                                                        <li>IT Support and Maintenance at the Data Centre (ASP, Hosting, Housing).</li>
-                                                        <li>LAN & Networking Pre Sales Support.</li>
-                                                        <li>LAN Project and Implementation.</li>
-                                                        <li>LAN Team Management and Coordination.</li>
-                                                    </ul>
-                                            
+                                            <h6 id="hiperbit"><i class="fas fa-building"></i> Hiperbit - Portugal</h6>
+                                                <div id="content-hiperbit">
+                                                    <p class="dates-list"><i class="fas fa-calendar-week"></i> September 1997 to April 2002</p>
+                                                    <p>Main tasks and challenges:</p>
+                                                        <ul class="tasks-list">
+                                                            <li>IT Support and Maintenance at the Data Centre (ASP, Hosting, Housing).</li>
+                                                            <li>LAN & Networking Pre Sales Support.</li>
+                                                            <li>LAN Project and Implementation.</li>
+                                                            <li>LAN Team Management and Coordination.</li>
+                                                        </ul>
+                                                </div>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +189,8 @@
      
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8W8vqlR-jlCx_uxHZuFIjE8lrwhCd6a8&callback=initMap"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/map.js"></script>
+    
 </body>
 </html>
 
