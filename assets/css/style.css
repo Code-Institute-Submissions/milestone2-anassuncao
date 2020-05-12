@@ -40,25 +40,20 @@ body {
 }
 
 
-/*------------------------------------Content Section - About Me-----------------------------*/
-
-
 .details-container {
-    padding-top: 70px;
+    padding-top: 60px;
     background-size: cover;
     color: #F2F2F2;
-    min-height: 400px;
+    min-height: 300px;
     margin: 0px;
     text-align: center;
     position: relative;
-    padding-top: 20px;
 }
 
 .header-details {
     padding: 20px;
     background-color: rgba(25,37,45,0.85);
     display: inline-block;
-    border-width: 3px;
 }
 
 .header-details h1 {
@@ -71,6 +66,7 @@ body {
     margin-top: 15px;
 }
 
+/*------------------------------------Content Section - About Me-----------------------------*/
 
 .about-text {
     background-color: rgba(25, 37, 45, 0.85);
@@ -188,6 +184,7 @@ information*/
     }
 }
 
+
 /*------------------------------------Skills-----------------------------*/
 
 .content-container .col-12 {
@@ -244,6 +241,21 @@ information*/
 }
 
 
+/*------------------------------------Contacts-----------------------------*/
+
+
+.contact-heading {
+    color: #F2F2F2;
+}
+
+.form-col {
+    background-color: rgba(25,37,45,0.85);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+
 /*------------------------------------Footer-----------------------------*/
 
 footer {
@@ -259,20 +271,20 @@ footer {
     padding-bottom: 15px;
 }
 
-footer h5 {
-    font-family: 'PT Sans Narrow', sans-serif;
+footer h6 {
+    
     letter-spacing: 1px;
     color: #F2F2F2;
 }
 
-footer h5 i {
+footer h6 i {
     color: #7091b2;
     margin-right: 5px;
     margin-left: 5px;
     display: inline;
 }
 
-footer h5 i:hover {
+footer h6 i:hover {
     color: #282828;
 }
 
