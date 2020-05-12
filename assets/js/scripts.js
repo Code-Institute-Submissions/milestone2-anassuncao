@@ -10,24 +10,40 @@ $(document).ready(function(){
       $("#content-inok").hide();
       $("#content-2as").hide();
       $("#content-hiperbit").hide();
+      $("#1k4s").addClass("grow");
+      $("#inok").removeClass("grow");
+      $("#2as").removeClass("grow");
+      $("#hiperbit").removeClass("grow");
   });
    $("#inok").click(function(){
       $("#content-inok").show();
       $("#content-1k4s").hide();
       $("#content-2as").hide();
       $("#content-hiperbit").hide();
+      $("#inok").addClass("grow");  
+      $("#1k4s").removeClass("grow");
+      $("#2as").removeClass("grow");
+      $("#hiperbit").removeClass("grow");
   });
   $("#2as").click(function(){
       $("#content-2as").show();
       $("#content-1k4s").hide();
       $("#content-inok").hide();
       $("#content-hiperbit").hide();
+      $("#2as").addClass("grow");
+      $("#1k4s").removeClass("grow");
+      $("#inok").removeClass("grow");
+      $("#hiperbit").removeClass("grow");
   });
   $("#hiperbit").click(function(){
       $("#content-hiperbit").show()
       $("#content-1k4s").hide();
       $("#content-inok").hide();
       $("#content-2as").hide();
+      $("#hiperbit").addClass("grow");
+      $("#1k4s").removeClass("grow");
+      $("#2as").removeClass("grow");
+      $("#inok").removeClass("grow");
   });
 });
 
