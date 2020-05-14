@@ -181,7 +181,11 @@ body {
 
 .grow {
     font-size: 20px;
-    text-decoration: underline;
+    font-weight: 500;
+}
+
+.blue {
+    color: #7091b2;
 }
 
 #map {
@@ -191,6 +195,7 @@ body {
 
 /*The following media query allows the "vertical timeline" to be continuous in smaller screens when all the work history appears in only one column. Without this there were gaps between the 
 information*/
+/*
 @media only screen and (max-width:991px) {
     .resume-content .col-lg-4, .history-items {
         margin-top:0;
@@ -201,7 +206,7 @@ information*/
     .history-items.last-column {
         margin-bottom: 30px;
     }
-}
+}*/
 
 
 /*------------------------------------Skills-----------------------------*/
