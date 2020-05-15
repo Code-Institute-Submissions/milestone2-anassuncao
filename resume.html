@@ -40,6 +40,7 @@
                     </ul>
                 </div>
     </nav>
+
     <section class="all-page-content">
         <header class="container-fluid">
             <div class="row">
@@ -60,10 +61,10 @@
                         <div class="row resume-content">
                             <div class="col-12 col-lg-4">
                                 <div class="list-group" id="myList" role="tablist">
-                                    <a onclick="renderMap(this);" data-title="EPO" data-positionlat="52.039673" data-positionlng="4.337959" id="team-lead" class="roles team-lead" data-toggle="list" href="#list-team-lead" role="tab" aria-controls="team-lead"><h5>Infrastructure Support Team Leader</h5></a>
-                                    <a onclick="renderMap(this);" data-title="CGD" data-positionlat="38.741374" data-positionlng="-9.141607" id="vmw-admin" class="roles vmw-admin" data-toggle="list" href="#list-vmw-inf-admin" role="tab" aria-controls="vmw-inf-admin"><h5>Windows & VMware Infrastructure Administration</h5></a>
-                                    <a id="inf-admin" class="roles inf-admin" data-toggle="list" href="#list-inf-admin" role="tab" aria-controls="inf-admin"><h5>VMware Infrastructure Administration Team Leader</h5></a>
-                                    <a id="sys-admin" class="roles sys-admin" data-toggle="list" href="#list-sys-admin" role="tab" aria-controls="sys-admin"><h5>Systems and Networks Administrator</h5></a>
+                                    <a onclick="renderMap(this);" data-title="EPO - European Patent Office" data-positionlat="52.039673" data-positionlng="4.337959" class="roles team-lead" data-toggle="list" href="#list-team-lead" role="tab" aria-controls="team-lead"><h5>Infrastructure Support Team Leader</h5></a>
+                                    <a onclick="renderMap(this);" data-title="Caixa Geral de Depósitos" data-positionlat="38.741374" data-positionlng="-9.141607" class="roles vmw-admin" data-toggle="list" href="#list-vmw-inf-admin" role="tab" aria-controls="vmw-inf-admin"><h5>Windows & VMware Infrastructure Administration</h5></a>
+                                    <a onclick="renderMap(this);" data-title="Novo Banco Sistemas de Informação" data-positionlat="38.750274" data-positionlng="-9.306628" class="roles inf-admin" data-toggle="list" href="#list-inf-admin" role="tab" aria-controls="inf-admin"><h5>VMware Infrastructure Administration Team Leader</h5></a>
+                                    <a class="roles sys-admin" data-toggle="list" href="#list-sys-admin" role="tab" aria-controls="sys-admin"><h5>Systems and Networks Administrator</h5></a>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-4">    
@@ -111,7 +112,7 @@
                                     <div class="tab-pane" id="list-sys-admin" role="tabpanel" aria-labelledby="list-sys-admin-list">
                                         <h5 class="role last-role">Systems and Networks Administrator</h5>
                                         <p class="know-more">Click on each company to know more.</p>
-                                            <h6 id="1k4s"><i class="fas fa-building"></i> 1K4S - Angola</h6>
+                                            <h6 onclick="renderMap(this);" data-title="1K4S" data-positionlat="-8.814512" data-positionlng="13.227454" id="1k4s"><i class="fas fa-building"></i> 1K4S - Angola</h6>
                                                 <div id="content-1k4s">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> December 2009 to July 2011</p>
                                                     <p>Main tasks and challenges:</p>
@@ -122,7 +123,7 @@
                                                         </ul>
                                                 </div>
                                             
-                                            <h6 id="inok"><i class="fas fa-building"></i> iNOK Consulting - Portugal</h6>
+                                            <h6 onclick="renderMap(this);" data-title="iNOK Consulting" data-positionlat="38.771612" data-positionlng="-9.097277" id="inok"><i class="fas fa-building"></i> iNOK Consulting - Portugal</h6>
                                                 <div id="content-inok">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> September 2003 to November 2009</p>
                                                     <p>Main tasks and challenges:</p>
@@ -134,7 +135,7 @@
                                                         </ul>  
                                                 </div>      
                                             
-                                            <h6 id="2as"><i class="fas fa-building"></i> 2AS - Portugal</h6>
+                                            <h6 onclick="renderMap(this);" data-title="2AS - Advanced Solutions S.A." data-positionlat="38.722314" data-positionlng="-9.304665" id="2as"><i class="fas fa-building"></i> 2AS - Portugal</h6>
                                                 <div id="content-2as">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> June 2002 to August 2003</p>
                                                     <p>Main tasks and challenges:</p>
@@ -144,7 +145,7 @@
                                                         </ul>
                                                 </div>
                                                   
-                                            <h6 id="hiperbit"><i class="fas fa-building"></i> Hiperbit - Portugal</h6>
+                                            <h6 onclick="renderMap(this);" data-title="Hyperbit" data-positionlat="38.718554" data-positionlng="-9.305477" id="hiperbit"><i class="fas fa-building"></i> Hiperbit - Portugal</h6>
                                                 <div id="content-hiperbit">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> September 1997 to April 2002</p>
                                                     <p>Main tasks and challenges:</p>
@@ -161,7 +162,6 @@
 
                             <div class="col-12 col-lg-4">
                                 <div id="map"></div>
-                                <!--<div id="map1"></div>-->
                             </div>
                         </div>
                     </div>

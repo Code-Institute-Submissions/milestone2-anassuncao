@@ -1,25 +1,25 @@
 $(document).ready(function(){
- // $("#map1").hide();
   $(".team-lead").addClass("blue").click(function(){
     $(".team-lead").addClass("blue"); 
     $(".vmw-admin").removeClass("blue");
     $(".inf-admin").removeClass("blue");
     $(".sys-admin").removeClass("blue");
   });
+
   $(".vmw-admin").click(function(){
       $(".vmw-admin").addClass("blue");
       $(".team-lead").removeClass("blue");
       $(".inf-admin").removeClass("blue");
       $(".sys-admin").removeClass("blue");
-     // $("#map").hide();
-      //$("#map1").show();
   });
+  
   $(".inf-admin").click(function(){
       $(".inf-admin").addClass("blue");
       $(".team-lead").removeClass("blue");
       $(".vmw-admin").removeClass("blue");
       $(".sys-admin").removeClass("blue");
   });
+  
   $(".sys-admin").click(function(){
       $(".sys-admin").addClass("blue");
       $(".team-lead").removeClass("blue");
@@ -37,6 +37,7 @@ $(document).ready(function(){
     $("#hiperbit").removeClass("grow");
     $("#1k4s").removeClass("grow");
   });
+  
   $("#1k4s").click(function(){
       $("#content-1k4s").show();
       $("#content-inok").hide();
@@ -47,7 +48,8 @@ $(document).ready(function(){
       $("#2as").removeClass("grow");
       $("#hiperbit").removeClass("grow");
   });
-   $("#inok").click(function(){
+  
+  $("#inok").click(function(){
       $("#content-inok").show();
       $("#content-1k4s").hide();
       $("#content-2as").hide();
@@ -57,6 +59,7 @@ $(document).ready(function(){
       $("#2as").removeClass("grow");
       $("#hiperbit").removeClass("grow");
   });
+  
   $("#2as").click(function(){
       $("#content-2as").show();
       $("#content-1k4s").hide();
@@ -67,6 +70,7 @@ $(document).ready(function(){
       $("#inok").removeClass("grow");
       $("#hiperbit").removeClass("grow");
   });
+  
   $("#hiperbit").click(function(){
       $("#content-hiperbit").show()
       $("#content-1k4s").hide();

@@ -25,7 +25,7 @@ body {
 .navbar-light a:hover {
     color: 	#7091b2!important;
 }
-/*I used the !important because the default styling pythonof the navbar-light used it also and it was the only way I could think of to make this work.*/
+/*I used the !important because the default styling of the navbar-light used it also and it was the only way I could think of to make this work.*/
 
 
 .nav-link i {
@@ -38,6 +38,7 @@ body {
     color: 	#7091b2;
 }
 
+/*------------------------------------Name and Role Info-----------------------------*/
 
 .details-container {
     padding-top: 60px;
@@ -65,7 +66,7 @@ body {
     margin-top: 15px;
 }
 
-/*------------------------------------Content Section - About Me-----------------------------*/
+/*------------------------------------About Me-----------------------------*/
 
 .about-text {
     background-color: rgba(25, 37, 45, 0.85);
@@ -120,7 +121,6 @@ body {
     color: #F2F2F2;
 }
 
-
 .roles {
     color: #f2f2f2;
     margin: 30px;
@@ -134,7 +134,6 @@ body {
 .list-group {
     margin: 20px;
 }
-
 
 .resume-content .col-lg-4 {
     padding-left: 30px;
@@ -188,7 +187,7 @@ body {
     color: #7091b2;
 }
 
-#map {
+#map, #map1 {
     height: 100%;
 }
 
@@ -274,8 +273,7 @@ information*/
 
 .form-col {
     background-color: rgba(25,37,45,0.85);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     margin: 10px;
 }
 
