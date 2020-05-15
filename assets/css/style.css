@@ -218,16 +218,17 @@ information*/
     margin: 0px;
 }
 
-.progress-container h3 {
+.progress-container h4 {
     margin-bottom: 30px;
     margin-top: 20px;
+    color: #f2f2f2;
 }
 
 .progress-container {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    background: rgba(25, 37, 45, 0.85);
 }
 
 .progress {
