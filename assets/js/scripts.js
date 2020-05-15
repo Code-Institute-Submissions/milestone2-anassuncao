@@ -1,4 +1,5 @@
 $(document).ready(function(){
+ // $("#map1").hide();
   $(".team-lead").addClass("blue").click(function(){
     $(".team-lead").addClass("blue"); 
     $(".vmw-admin").removeClass("blue");
@@ -10,6 +11,8 @@ $(document).ready(function(){
       $(".team-lead").removeClass("blue");
       $(".inf-admin").removeClass("blue");
       $(".sys-admin").removeClass("blue");
+     // $("#map").hide();
+      //$("#map1").show();
   });
   $(".inf-admin").click(function(){
       $(".inf-admin").addClass("blue");
