@@ -17,7 +17,7 @@
     <title>Andre Saramago Resume</title>
 </head>
 <body>
-
+ <!--This navbar came from bootstrap. I've added the icons and the rest of the styling to match the colors and general styling of the website-->
    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
@@ -51,78 +51,80 @@
             </div>
         </header>
 
-    <!--This navbar came from bootstrap. I've added the icons and the rest of the styling to match the colors and general styling of the website-->
-
     <div class="container-fluid">
         <div class="progress-container content-container">
-            <div class="row tittle-container">
-                <h4> Technical Skills & Technologies </h4><br>
+            <div class="row">
+                <div class="col-12 title-container" id="tech-skills-tech">
+                    <h4> Technical Skills & Technologies </h4>
+                    <p class="know-more-center">Click each technology for more info.</p>
+                </div>
             </div>
             <div class="row">
-                <div class="col-3 col-lg-2 info-container">
+                <div class="col-3 col-lg-2 info-container info-tab-container">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-vmw-tab" data-toggle="pill" href="#v-pills-vmw" role="tab" aria-controls="v-pills-vmw" aria-selected="true">VMware</a>
-                        <a class="nav-link" id="v-pills-windows-tab" data-toggle="pill" href="#v-pills-windows" role="tab" aria-controls="v-pills-windows" aria-selected="false">Windows</a>
-                        <a class="nav-link" id="v-pills-hp-tab" data-toggle="pill" href="#v-pills-hp" role="tab" aria-controls="v-pills-hp" aria-selected="false">Hewlett Packard</a>
+                        <a class="nav-link logo vmw" id="v-pills-vmw-tab" data-toggle="pill" href="#v-pills-vmw" role="tab" aria-controls="v-pills-vmw" aria-selected="true">VMWare</a>
+                        <a class="nav-link logo windows" id="v-pills-windows-tab" data-toggle="pill" href="#v-pills-windows" role="tab" aria-controls="v-pills-windows" aria-selected="false">Microsoft</a>
+                        <a class="nav-link logo hp" id="v-pills-hp-tab" data-toggle="pill" href="#v-pills-hp" role="tab" aria-controls="v-pills-hp" aria-selected="false">Hewlett Packard</a>
                     </div>
                 </div>
                 <div class="col-9 col-lg-4 info-container">
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-vmw" role="tabpanel" aria-labelledby="v-pills-vmw-tab">
-                            <ul class="fa-ul tech-skills">
+                    <div class="tab-content tab-content-skills" id="v-pills-tabContent">
+                        <div class="tab-pane fade show" id="v-pills-vmw" role="tabpanel" aria-labelledby="v-pills-vmw-tab">
+                            <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> VMware VSphere 4, 4.1, 5.0, 5.1, 5.5, 6.0 & 6.5</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> VMware Power CLI</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> vCenter Operations, vRealize Operations</li>
-                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> vMware ESX / ESXi 3.5, 4, 4.1, 5.0, 5.1, 5.5, 6.0 & 6.5</li><br>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> vMware ESX / ESXi 3.5, 4, 4.1, 5.0, 5.1, 5.5, 6.0 & 6.5</li>
                             </ul>
+                            <div class="wmv"></div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-windows" role="tabpanel" aria-labelledby="v-pills-windows-tab">
-                            <ul class="fa-ul tech-skills">
+                            <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Windows Server 2000, 2003 R2, 2008, 2008 R2, 2012, 2012 R2</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Microsoft Windows XP, Vista, 7, 8, 8.1</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Microsoft Exchange Server 2003, 2007 & 2010</li>
-                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Microsoft Active Directory, GPO, DNS, DHCP</li><br>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Microsoft Active Directory, GPO, DNS, DHCP</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="v-pills-hp" role="tabpanel" aria-labelledby="v-pills-hp-tab">
-                            <ul class="fa-ul tech-skills">
+                            <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> HP Blade Systems – c3000 c7000 enclosures. Synergy Frames</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Proliant Server Synergy DL, BL & ML series</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Storage HP 3PAR, 7000 series & 10000 series. HP MSA & EVA Storage Array</li>
-                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> HP Procurve Network – Switching</li><br>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> HP Procurve Network – Switching</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-lg-2 info-container">
+                <div class="col-3 col-lg-2 info-container info-tab-container">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link" id="v-pills-dell-tab" data-toggle="pill" href="#v-pills-dell" role="tab" aria-controls="v-pills-dell" aria-selected="true">DellEMC</a>
-                        <a class="nav-link" id="v-pills-fujitsu-tab" data-toggle="pill" href="#v-pills-fujitsu" role="tab" aria-controls="v-pills-fujitsu" aria-selected="false">Fujitsu</a>
-                        <a class="nav-link" id="v-pills-ibm-tab" data-toggle="pill" href="#v-pills-ibm" role="tab" aria-controls="v-pills-ibm" aria-selected="false">IBM</a>
-                        <a class="nav-link" id="v-pills-cisco-tab" data-toggle="pill" href="#v-pills-cisco" role="tab" aria-controls="v-pills-cisco" aria-selected="false">Cisco</a>
+                        <a class="nav-link logo dell" id="v-pills-dell-tab" data-toggle="pill" href="#v-pills-dell" role="tab" aria-controls="v-pills-dell" aria-selected="true">Dell</a>
+                        <a class="nav-link logo fujitsu" id="v-pills-fujitsu-tab" data-toggle="pill" href="#v-pills-fujitsu" role="tab" aria-controls="v-pills-fujitsu" aria-selected="false">Fujitsu</a>
+                        <a class="nav-link logo ibm" id="v-pills-ibm-tab" data-toggle="pill" href="#v-pills-ibm" role="tab" aria-controls="v-pills-ibm" aria-selected="false">IBM</a>
+                        <a class="nav-link logo cisco" id="v-pills-cisco-tab" data-toggle="pill" href="#v-pills-cisco" role="tab" aria-controls="v-pills-cisco" aria-selected="false">Cisco</a>
                     </div>
                 </div>
                 <div class="col-9 col-lg-4 info-container">
-                    <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-content tab-content-skills" id="v-pills-tabContent">
                         <div class="tab-pane fade" id="v-pills-dell" role="tabpanel" aria-labelledby="v-pills-dell-tab">
-                             <ul class="fa-ul tech-skills">
+                             <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> EMC VMAX Storage Systems</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Dell PowerEdge R-series servers</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="v-pills-fujitsu" role="tabpanel" aria-labelledby="v-pills-fujitsu-tab">
-                            <ul class="fa-ul tech-skills">
+                            <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Fujitsu PRIMERGY R Servers</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="v-pills-ibm" role="tabpanel" aria-labelledby="v-pills-ibm-tab">
-                            <ul class="fa-ul tech-skills">
+                            <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> IBM System X Servers</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> IBM Tivoli Storage Manager</li>
                             </ul>
                         </div>
                         <div class="tab-pane fade" id="v-pills-cisco" role="tabpanel" aria-labelledby="v-pills-cisco-tab">
-                             <ul class="fa-ul tech-skills">
+                             <ul class="fa-ul">
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Switching – Cisco Catalyst</li>
                                 <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Wireless – Cisco Aironet</li>
                             </ul>
@@ -132,8 +134,9 @@
             </div>
 
             <div class="row">    
-                <div class="col-12 col-lg-6 tittle-container bottom-margin">
+                <div class="col-12 col-lg-6 title-container bottom-margin">
                     <h4>Soft Skills</h4>
+                    <p class="know-more-center">Click for more info.</p>
                         <div>
                             <ul class="fa-ul tech-skills">
                                 <li><span class="fa-li"><i class="fas fa-users"></i></span> Team Management</li>
@@ -145,8 +148,9 @@
                         </div>
                 </div>
             
-                <div class="col-12 col-lg-6 tittle-container bottom-margin">
+                <div class="col-12 col-lg-6 title-container bottom-margin">
                     <h4>Certifications</h4>
+                    <p class="know-more-center">Click for more info.</p>
                         <div>
                             <ul class="fa-ul tech-skills">
                                 <li><span class="fa-li"><i class="fas fa-user-check"></i></span> VMware Certified Professional: VCP6</li>

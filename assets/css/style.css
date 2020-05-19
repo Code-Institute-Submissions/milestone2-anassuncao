@@ -210,7 +210,19 @@ information*/
 
 /*------------------------------------Skills-----------------------------*/
 
-.tittle-container {
+h4 {
+    padding-left: 12px;
+    text-align: center;
+}
+
+.know-more-center {
+    font-size: 15px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
+
+.title-container {
     color: #f2f2f2;
     background-color: rgba(25, 37, 45, 0.85);
     padding: 7px;
@@ -221,11 +233,58 @@ information*/
     background-color: rgba(25, 37, 45, 0.85);
     margin-bottom: 7px;
     padding: 7px;
+    align-content: center;
 }
 
-a {
-    color: #f2f2f2;
+.tab-content-skills {
+    border-left-color: #f2f2f2;
+    border-left-style: solid;
+    border-left-width: 2px;
 }
+
+div > .logo {
+    color: #f2f2f2;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.vmw {
+    background-image: url("../images/vmwarelogo.jpg") no-repeat center center;
+    background-size: cover;
+    height: 50px;
+    width: 70px;
+}
+/*
+.windows {
+    background: url("../images/microsoftlogo.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.hp {
+    background: url("../images/hplogo.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.dell {
+    background: url("../images/delllogo.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.fujitsu {
+    background: url("../images/fujitsulogo.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.ibm {
+    background: url("../images/ibmlogo.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.cisco {
+    background: url("../images/ciscologo.jpg") no-repeat center center;
+    background-size: cover;
+}
+*/
 
 a:hover {
     color: #7091b2;

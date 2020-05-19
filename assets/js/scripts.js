@@ -81,7 +81,32 @@ $(document).ready(function(){
       $("#2as").removeClass("grow");
       $("#inok").removeClass("grow");
   });
+  $(".info-container").hide();
+  $(".tech-skills").hide();
+  $("#tech-skills-tech").mouseenter(function(){
+      $(".info-container").show();
+      $("#v-pills-vmw-tab").click(function(){
+        $("#v-pills-vmw").show();
+        $("v-pills-hp").hide();
+        $("v-pills-windows").hide();
+        $("v-pills-dell").hide();
+        $("v-pills-fujitsu").hide();
+        $("v-pills-ibm").hide();
+        $("v-pills-cisco").hide();
+    });
+    $("#v-pills-windows-tab").click(function(){
+        $("v-pills-windows").show();
+        $("#v-pills-vmw").hide();
+        $("v-pills-hp").hide();
+        $("v-pills-dell").hide();
+        $("v-pills-fujitsu").hide();
+        $("v-pills-ibm").hide();
+        $("v-pills-cisco").hide();
+    });
+  });
+  
 });
+
 
 /* Because I don't know in each order the user will click on the companies to see the information that each one has, I had to make sure that
 everything that was supposed to be hidden was, in fact, hidden and what was supposed to be shown was showing. Hence the .hide of everything

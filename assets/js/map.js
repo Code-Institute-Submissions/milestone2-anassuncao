@@ -6,13 +6,18 @@ function initMap() {
     zoom: 10
   });
 
+
   var epoMarker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: "EPO - European Patent Office"
+    title: "EPO - European Patent Office",
+    icon: buildingMarker
   });
 };
 
+ var buildingMarker = "http://maps.google.com/mapfiles/kml/pal3/icon21.png"
+
+ 
 //The following code should render the map when the company name or the role is clicked.
 
 function renderMap(element) {
@@ -29,6 +34,7 @@ function renderMap(element) {
              var Marker = new google.maps.Marker({
                 position: { lat: positionlat, lng: positionlng },
                 map: map,
-                title: title 
+                title: title, 
+                icon: buildingMarker
                 });
         };
