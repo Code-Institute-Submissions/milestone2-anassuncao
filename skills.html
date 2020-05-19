@@ -53,74 +53,113 @@
 
     <!--This navbar came from bootstrap. I've added the icons and the rest of the styling to match the colors and general styling of the website-->
 
-
-    <!--I took this section of the code from the UCD-Resume project from a previous lesson of the course. I then added/changed the styling to match my website-->
     <div class="container-fluid">
-            <div class="progress-container content-container">
-                    <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <h4>Technical Skills</h4>
-                            <div class="progress">
-                                <div class="progress-bar bg-darkblue" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
-                                <span class="progress-type">VMware vSphere</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-mediumblue" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
-                                    <span class="progress-type">Server HW Management</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-mediumbluelight" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-                                    <span class="progress-type">Microsoft</span>
-                                </div> 
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-lightblue" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
-                                    <span class="progress-type">Data Center Management</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-lighter" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%;">
-                                    <span class="progress-type">IT Service Management</span>
-                                </div>
-                            </div>
+        <div class="progress-container content-container">
+            <div class="row tittle-container">
+                <h4> Technical Skills & Technologies </h4><br>
+            </div>
+            <div class="row">
+                <div class="col-3 col-lg-2 info-container">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-vmw-tab" data-toggle="pill" href="#v-pills-vmw" role="tab" aria-controls="v-pills-vmw" aria-selected="true">VMware</a>
+                        <a class="nav-link" id="v-pills-windows-tab" data-toggle="pill" href="#v-pills-windows" role="tab" aria-controls="v-pills-windows" aria-selected="false">Windows</a>
+                        <a class="nav-link" id="v-pills-hp-tab" data-toggle="pill" href="#v-pills-hp" role="tab" aria-controls="v-pills-hp" aria-selected="false">Hewlett Packard</a>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-4 info-container">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-vmw" role="tabpanel" aria-labelledby="v-pills-vmw-tab">
+                            <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> VMware VSphere 4, 4.1, 5.0, 5.1, 5.5, 6.0 & 6.5</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> VMware Power CLI</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> vCenter Operations, vRealize Operations</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> vMware ESX / ESXi 3.5, 4, 4.1, 5.0, 5.1, 5.5, 6.0 & 6.5</li><br>
+                            </ul>
                         </div>
-                        <div class="col-12 col-lg-4">
-                            <h4>Soft Skills</h4>
-                            <div class="progress">
-                                <div class="progress-bar bg-darkblue" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
-                                    <span class="progress-type">Team Management</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-mediumblue" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
-                                    <span class="progress-type">Team work</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-mediumbluelight" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
-                                    <span class="progress-type">Flexibility</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-lightblue" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
-                                    <span class="progress-type">Communication</span>
-                                </div>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-lighter" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
-                                    <span class="progress-type">Resilience</span>
-                                </div>
-                                
-                            </div>
+                        <div class="tab-pane fade" id="v-pills-windows" role="tabpanel" aria-labelledby="v-pills-windows-tab">
+                            <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Windows Server 2000, 2003 R2, 2008, 2008 R2, 2012, 2012 R2</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Microsoft Windows XP, Vista, 7, 8, 8.1</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Microsoft Exchange Server 2003, 2007 & 2010</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Microsoft Active Directory, GPO, DNS, DHCP</li><br>
+                            </ul>
                         </div>
-                        <div class="col-12 col-lg-4">
-                            <h4>Certifications & Technologies</h4>
+                        <div class="tab-pane fade" id="v-pills-hp" role="tabpanel" aria-labelledby="v-pills-hp-tab">
+                            <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> HP Blade Systems – c3000 c7000 enclosures. Synergy Frames</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Proliant Server Synergy DL, BL & ML series</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Storage HP 3PAR, 7000 series & 10000 series. HP MSA & EVA Storage Array</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> HP Procurve Network – Switching</li><br>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div> 
+                <div class="col-3 col-lg-2 info-container">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link" id="v-pills-dell-tab" data-toggle="pill" href="#v-pills-dell" role="tab" aria-controls="v-pills-dell" aria-selected="true">DellEMC</a>
+                        <a class="nav-link" id="v-pills-fujitsu-tab" data-toggle="pill" href="#v-pills-fujitsu" role="tab" aria-controls="v-pills-fujitsu" aria-selected="false">Fujitsu</a>
+                        <a class="nav-link" id="v-pills-ibm-tab" data-toggle="pill" href="#v-pills-ibm" role="tab" aria-controls="v-pills-ibm" aria-selected="false">IBM</a>
+                        <a class="nav-link" id="v-pills-cisco-tab" data-toggle="pill" href="#v-pills-cisco" role="tab" aria-controls="v-pills-cisco" aria-selected="false">Cisco</a>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-4 info-container">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade" id="v-pills-dell" role="tabpanel" aria-labelledby="v-pills-dell-tab">
+                             <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> EMC VMAX Storage Systems</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Dell PowerEdge R-series servers</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-fujitsu" role="tabpanel" aria-labelledby="v-pills-fujitsu-tab">
+                            <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Fujitsu PRIMERGY R Servers</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-ibm" role="tabpanel" aria-labelledby="v-pills-ibm-tab">
+                            <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> IBM System X Servers</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> IBM Tivoli Storage Manager</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-cisco" role="tabpanel" aria-labelledby="v-pills-cisco-tab">
+                             <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Switching – Cisco Catalyst</li>
+                                <li><span class="fa-li"><i class="fas fa-user-cog"></i></span> Wireless – Cisco Aironet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">    
+                <div class="col-12 col-lg-6 tittle-container bottom-margin">
+                    <h4>Soft Skills</h4>
+                        <div>
+                            <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-users"></i></span> Team Management</li>
+                                <li><span class="fa-li"><i class="fas fa-users"></i></span> Team work</li>
+                                <li><span class="fa-li"><i class="fas fa-users"></i></span> Flexibility</li>
+                                <li><span class="fa-li"><i class="fas fa-users"></i></span> Communication</li>
+                                <li><span class="fa-li"><i class="fas fa-users"></i></span> Resilience</li>        
+                            </ul>
+                        </div>
+                </div>
+            
+                <div class="col-12 col-lg-6 tittle-container bottom-margin">
+                    <h4>Certifications</h4>
+                        <div>
+                            <ul class="fa-ul tech-skills">
+                                <li><span class="fa-li"><i class="fas fa-user-check"></i></span> VMware Certified Professional: VCP6</li>
+                                <li><span class="fa-li"><i class="fas fa-user-check"></i></span> VMware vSphere: Install Configure and Manage [V6]</li>
+                                <li><span class="fa-li"><i class="fas fa-user-check"></i></span> Microsoft Certified Systems Administrator – Windows Server 2003</li>
+                                <li><span class="fa-li"><i class="fas fa-user-check"></i></span> Cisco Certified Network Associate – Cisco Networking Technologies and Cisco network devices Interconnection</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
 
     </section>
     <footer class="container-fluid">

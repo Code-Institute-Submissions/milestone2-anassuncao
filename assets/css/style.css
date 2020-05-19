@@ -210,58 +210,38 @@ information*/
 
 /*------------------------------------Skills-----------------------------*/
 
-.content-container .col-12 {
-    padding-right: 20px;
+.tittle-container {
+    color: #f2f2f2;
+    background-color: rgba(25, 37, 45, 0.85);
+    padding: 7px;
 }
 
-.content-container .row {
-    margin: 0px;
+.info-container {
+    color: #f2f2f2;
+    background-color: rgba(25, 37, 45, 0.85);
+    margin-bottom: 7px;
+    padding: 7px;
 }
 
-.progress-container h4 {
-    margin-bottom: 30px;
-    margin-top: 20px;
+a {
     color: #f2f2f2;
 }
 
-.progress-container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 20px;
-    background: rgba(25, 37, 45, 0.85);
+a:hover {
+    color: #7091b2;
 }
 
-.progress {
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #7091b2;
+    background-color: transparent;
+}
+
+i {
+    color: #7091b2;
+}
+
+.bottom-margin {
     margin-bottom: 10px;
-    height: 25px;
-}
-
-.progress-type {
-    text-align: right;
-}
-
-.progress-bar {
-    padding-right: 5px;
-}
-
-.bg-darkblue {
-    background-color: #021526;
-}
-
-.bg-mediumblue {
-    background-color: #405F73;
-}
-
-.bg-mediumbluelight {
-    background-color: #658DA6;
-}
-
-.bg-lightblue {
-    background-color: #8BBBD9;
-}
-
-.bg-lighter {
-    background-color: #bfbfbf;
 }
 
 
