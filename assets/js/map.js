@@ -24,17 +24,18 @@ function renderMap(element) {
    var title = $(element).data("title");
    var positionlat = $(element).data("positionlat");
    var positionlng = $(element).data("positionlng");
-
-
+   
+   
     map = new google.maps.Map(document.getElementById("map"), {
                 center: { lat: positionlat, lng: positionlng },
                 zoom: 10
             });
 
-             var Marker = new google.maps.Marker({
+             var marker = new google.maps.Marker({
                 position: { lat: positionlat, lng: positionlng },
                 map: map,
                 title: title, 
                 icon: buildingMarker
                 });
+     
         };
