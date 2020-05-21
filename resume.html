@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <!--This navbar came from bootstrap. I've added the icons and the rest of the styling to match the colors and general styling of the website-->
+    <!--This navbar and burger menu came from bootstrap. I've added the icons and the rest of the styling to match the colors and general styling of the website-->
    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
@@ -61,9 +61,9 @@
                         <div class="row resume-content">
                             <div class="col-12 col-lg-4">
                                 <div class="list-group" id="myList" role="tablist">
-                                    <a onclick="renderMap(this);" data-title="EPO - European Patent Office" data-positionlat="52.039673" data-positionlng="4.337959" class="roles team-lead" data-toggle="list" href="#list-team-lead" role="tab" aria-controls="team-lead"><h5>Infrastructure Support Team Leader</h5></a>
-                                    <a onclick="renderMap(this);" data-title="Caixa Geral de Depósitos" data-positionlat="38.741374" data-positionlng="-9.141607" class="roles vmw-admin" data-toggle="list" href="#list-vmw-inf-admin" role="tab" aria-controls="vmw-inf-admin"><h5>Windows & VMware Infrastructure Administration</h5></a>
-                                    <a onclick="renderMap(this);" data-title="Novo Banco Sistemas de Informação" data-positionlat="38.750274" data-positionlng="-9.306628" class="roles inf-admin" data-toggle="list" href="#list-inf-admin" role="tab" aria-controls="inf-admin"><h5>VMware Infrastructure Administration Team Leader</h5></a>
+                                    <a onclick="renderMap(this);" data-title="EPO - European Patent Office" data-positionlat="52.039673" data-positionlng="4.337959" data-content="<div id='content'><p><b>EPO</b> is the executive body of the European Patent Organisation. It grants European patents for the Contracting States to the European Patent Convention.</p></div>" class="roles team-lead" data-toggle="list" href="#list-team-lead" role="tab" aria-controls="team-lead"><h5>Infrastructure Support Team Leader</h5></a>
+                                    <a onclick="renderMap(this);" data-title="Caixa Geral de Depósitos" data-positionlat="38.741374" data-positionlng="-9.141607" data-content="<div id='content'><p><b>Caixa Geral de Depósitos</b> it's the Portuguese Government National Bank. It was created in 1876 and currently has around 14.000 employees.</p></div>" class="roles vmw-admin" data-toggle="list" href="#list-vmw-inf-admin" role="tab" aria-controls="vmw-inf-admin"><h5>Windows & VMware Infrastructure Administration</h5></a>
+                                    <a onclick="renderMap(this);" data-title="Novo Banco Sistemas de Informação" data-positionlat="38.750274" data-positionlng="-9.306628" data-content="<div id='content'><p><b>Novo Banco S.I.</b> is the biggest Portuguese private bank with around 5000 employees.</p></div>" class="roles inf-admin" data-toggle="list" href="#list-inf-admin" role="tab" aria-controls="inf-admin"><h5>VMware Infrastructure Administration Team Leader</h5></a>
                                     <a class="roles sys-admin" data-toggle="list" href="#list-sys-admin" role="tab" aria-controls="sys-admin"><h5>Systems and Networks Administrator</h5></a>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@
                                     <div class="tab-pane" id="list-sys-admin" role="tabpanel" aria-labelledby="list-sys-admin-list">
                                         <h5 class="role last-role">Systems and Networks Administrator</h5>
                                         <p class="know-more">Click on each company to know more.</p>
-                                            <h6 onclick="renderMap(this);" data-title="1K4S" data-positionlat="-8.814512" data-positionlng="13.227454" id="1k4s"><i class="fas fa-building"></i> 1K4S - Angola</h6>
+                                            <h6 onclick="renderMap(this);" data-title="1K4S" data-positionlat="-8.814512" data-positionlng="13.227454" data-content="<div id='content'><p><b>1K4S</b> is a small company providing IT infrastructure resources to an Angolan consortium who provided end-to-end IT Solutions in the country's territory.</p></div>" id="1k4s"><i class="fas fa-building"></i> 1K4S - Angola</h6>
                                                 <div id="content-1k4s">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> December 2009 to July 2011</p>
                                                     <p>Main tasks and challenges:</p>
@@ -123,7 +123,7 @@
                                                         </ul>
                                                 </div>
                                             
-                                            <h6 onclick="renderMap(this);" data-title="iNOK Consulting" data-positionlat="38.771612" data-positionlng="-9.097277" id="inok"><i class="fas fa-building"></i> iNOK Consulting - Portugal</h6>
+                                            <h6 onclick="renderMap(this);" data-title="iNOK Consulting" data-positionlat="38.771612" data-positionlng="-9.097277" data-content="<div id='content'><p><b>iNOK</b> is a service oriented IT Company that provided solutions of designing, delivering and maintaining IT infrastructures for all kinds of businesses. It's currently integrated into Claranet, one of the biggest players in Portuguese IT Managed Services.</p></div>" id="inok"><i class="fas fa-building"></i> iNOK Consulting - Portugal</h6>
                                                 <div id="content-inok">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> September 2003 to November 2009</p>
                                                     <p>Main tasks and challenges:</p>
@@ -135,7 +135,7 @@
                                                         </ul>  
                                                 </div>      
                                             
-                                            <h6 onclick="renderMap(this);" data-title="2AS - Advanced Solutions S.A." data-positionlat="38.722314" data-positionlng="-9.304665" id="2as"><i class="fas fa-building"></i> 2AS - Portugal</h6>
+                                            <h6 onclick="renderMap(this);" data-title="2AS - Advanced Solutions S.A." data-positionlat="38.722314" data-positionlng="-9.304665" data-content="<div id='content'><p><b>2AS</b> was a small company that provided Professional IT services to small and mid-size enterprises.</p></div>" id="2as"><i class="fas fa-building"></i> 2AS - Portugal</h6>
                                                 <div id="content-2as">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> June 2002 to August 2003</p>
                                                     <p>Main tasks and challenges:</p>
@@ -145,7 +145,7 @@
                                                         </ul>
                                                 </div>
                                                   
-                                            <h6 onclick="renderMap(this);" data-title="Hyperbit" data-positionlat="38.718554" data-positionlng="-9.305477" id="hiperbit"><i class="fas fa-building"></i> Hiperbit - Portugal</h6>
+                                            <h6 onclick="renderMap(this);" data-title="Hiperbit" data-positionlat="38.718554" data-positionlng="-9.305477" data-content="<div id='content'><p><b>Hiperbit</b> was the first Portuguese company to build, from its own Data Centre, an independent ASP (Application Service Provider).</p></div>" id="hiperbit"><i class="fas fa-building"></i> Hiperbit - Portugal</h6>
                                                 <div id="content-hiperbit">
                                                     <p class="dates-list"><i class="fas fa-calendar-week"></i> September 1997 to April 2002</p>
                                                     <p>Main tasks and challenges:</p>
@@ -161,6 +161,9 @@
                             </div>
 
                             <div class="col-12 col-lg-4">
+                                <div>
+                                    <p class="know-more">Click the building icon on the map for a short description about the company.</p>
+                                </div>
                                 <div id="map"></div>
                             </div>
                         </div>

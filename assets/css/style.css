@@ -38,6 +38,7 @@ body {
     color: 	#7091b2;
 }
 
+
 /*------------------------------------Name and Role Info-----------------------------*/
 
 .details-container {
@@ -187,26 +188,17 @@ body {
     color: #7091b2;
 }
 
-#map, #map1 {
+/*The map wasn't showing in smaller screens, whenever the col-12 class was active, therefore I needed to add a min-height to make sure it will always appear no matter the screen size. */
+#map {
     height: 100%;
+    min-height: 200px;
+    padding-bottom: 10px;
 }
 
-
-/*The following media query allows the "vertical timeline" to be continuous in smaller screens when all the work history appears in only one column. Without this there were gaps between the 
-information*/
-/*
-@media only screen and (max-width:991px) {
-    .resume-content .col-lg-4, .history-items {
-        margin-top:0;
-        margin-bottom: 0;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .history-items.last-column {
-        margin-bottom: 30px;
-    }
-}*/
-
+/*To give color to the text inside the info windows in the map. Without this, the text was "grayed out".*/
+#content {
+    color:black;
+}
 
 /*------------------------------------Skills-----------------------------*/
 
@@ -242,7 +234,7 @@ h4 {
     border-left-width: 2px;
 }
 
-div > .logo {
+div > .tech-name {
     color: #f2f2f2;
     margin: 5px;
     font-size: 18px;
@@ -254,37 +246,6 @@ div > .logo {
     height: 50px;
     width: 70px;
 }
-/*
-.windows {
-    background: url("../images/microsoftlogo.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-.hp {
-    background: url("../images/hplogo.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-.dell {
-    background: url("../images/delllogo.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-.fujitsu {
-    background: url("../images/fujitsulogo.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-.ibm {
-    background: url("../images/ibmlogo.jpg") no-repeat center center;
-    background-size: cover;
-}
-
-.cisco {
-    background: url("../images/ciscologo.jpg") no-repeat center center;
-    background-size: cover;
-}
-*/
 
 a:hover {
     color: #7091b2;
@@ -301,6 +262,15 @@ i {
 
 .bottom-margin {
     margin-bottom: 10px;
+}
+
+/*The following media query allows the list of Technical Skills & Technologies to be continuous in smaller screens when all of them appears only in one column.
+Without this there were gaps between the information.*/
+
+@media only screen and (max-width:991px) {
+    .no-bottom-margin {
+        margin-bottom: 0;
+    }
 }
 
 

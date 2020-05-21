@@ -1,4 +1,11 @@
 $(document).ready(function(){
+
+/*___________________Resume Page___________________*/
+
+ /*I don't know in each order the user will click on the companies to see the information that each one has and I have to make sure that the info is displayed
+  the way I want it to, so I had to make sure that everything that was supposed to be hidden was, in fact, hidden and what was supposed to be shown was showing. Hence the .hide of everything
+  other than the block of text that I want to show. The same logic applies to the add and remove class to highlight the company that is clicked. */
+
   $(".team-lead").addClass("blue").click(function(){
     $(".team-lead").addClass("blue"); 
     $(".vmw-admin").removeClass("blue");
@@ -81,23 +88,29 @@ $(document).ready(function(){
       $("#2as").removeClass("grow");
       $("#inok").removeClass("grow");
   });
-  /* Because I don't know in each order the user will click on the companies to see the information that each one has, I had to make sure that
-everything that was supposed to be hidden was, in fact, hidden and what was supposed to be shown was showing. Hence the .hide of everything
-other than the block of text that I want to show. The same logic applies to the add and remove class to highlight the company that is clicked. */
+ 
+
+/*___________________Skills Page___________________*/
+
+/*Similar logic is applied in this section. I've tried to give the user the possibility to hide and show
+whatever he/she wants to using its "clicks" in a way that doesn't acumulate info on the screen making it 
+messy and deorganized.*/
 
 $(".cert-list").hide();
 $(".soft-list").hide();
-$("#v-pills-vmw-tab").click(function(){
+$(".info-container").hide();
+$("#tech-skills-tech").click(function(){
+    $("#tech-skills-tech > h4").addClass("blue");
+    $(".info-container").show();
+    $("#v-pills-vmw").show();
     $("#v-pills-dell").hide();
     $("#v-pills-fujitsu").hide();
     $("#v-pills-ibm").hide();
     $("#v-pills-cisco").hide();
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
-    $("#v-pills-vmw").show();
     $(".soft-list").hide();
     $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
     $(".cert-skills > h4").removeClass("blue");
     $(".soft-skills > h4").removeClass("blue");
 });
@@ -185,16 +198,24 @@ $("#v-pills-cisco-tab").click(function(){
     $(".cert-skills > h4").removeClass("blue");
     $(".soft-skills > h4").removeClass("blue");
 });
-$(".soft-skills").click(function(){
-    $(".soft-list").show();
-    $(".cert-list").hide();
+$("#v-pills-vmw-tab").click(function(){
     $("#v-pills-dell").hide();
     $("#v-pills-fujitsu").hide();
     $("#v-pills-ibm").hide();
     $("#v-pills-cisco").hide();
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
-    $("#v-pills-vmw").hide();
+    $("#v-pills-vmw").show();
+    $(".soft-list").hide();
+    $(".cert-list").hide();
+    $("#tech-skills-tech > h4").addClass("blue");
+    $(".cert-skills > h4").removeClass("blue");
+    $(".soft-skills > h4").removeClass("blue");
+});
+$(".soft-skills").click(function(){
+    $(".soft-list").show();
+    $(".info-container").hide();
+    $(".cert-list").hide();
     $(".soft-skills").addClass("blue"); 
     $(".cert-skills").removeClass("blue");
     $(".soft-skills > h4").addClass("blue");
@@ -204,23 +225,10 @@ $(".soft-skills").click(function(){
 $(".cert-skills").click(function(){
     $(".soft-list").hide();
     $(".cert-list").show();
-    $("#v-pills-dell").hide();
-    $("#v-pills-fujitsu").hide();
-    $("#v-pills-ibm").hide();
-    $("#v-pills-cisco").hide();
-    $("#v-pills-windows").hide();
-    $("#v-pills-hp").hide();
-    $("#v-pills-vmw").hide();
+    $(".info-container").hide();
     $(".cert-skills > h4").addClass("blue");
     $(".soft-skills > h4").removeClass("blue");
     $("#tech-skills-tech > h4").removeClass("blue");
-});
-$("#tech-skills-tech").click(function(){
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 });
 
