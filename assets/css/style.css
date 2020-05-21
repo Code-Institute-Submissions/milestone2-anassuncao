@@ -18,6 +18,10 @@ body {
     background-color: rgb(25, 37, 45)!important;
 }
 
+.navbar {
+    min-height: 70px;
+}
+
 .navbar-light a {
     color: #F2F2F2!important;
 }
@@ -65,6 +69,15 @@ body {
 .header-details h3 {
     font-weight: 100;
     margin-top: 15px;
+}
+
+/*This media query increases the space between the nav bar and the box with name and tittle and between said box and the content div in bigger screens in order to prevent
+the existence of white space in the bottom of the website.*/
+@media only screen and (min-height:900px) {
+    .details-container {
+        margin-bottom: 100px;
+        margin-top: 70px;
+    }
 }
 
 /*------------------------------------About Me-----------------------------*/
@@ -240,13 +253,6 @@ div > .tech-name {
     font-size: 18px;
 }
 
-.vmw {
-    background-image: url("../images/vmwarelogo.jpg") no-repeat center center;
-    background-size: cover;
-    height: 50px;
-    width: 70px;
-}
-
 a:hover {
     color: #7091b2;
 }
@@ -298,7 +304,7 @@ footer {
 }
 
 #footer-details {
-    padding-top: 25px;
+    padding-top: 40px;
     padding-left: 15px;
     padding-bottom: 15px;
 }

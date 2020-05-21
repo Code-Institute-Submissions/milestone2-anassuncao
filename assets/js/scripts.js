@@ -95,13 +95,8 @@ $(document).ready(function(){
 /*Similar logic is applied in this section. I've tried to give the user the possibility to hide and show
 whatever he/she wants to using its "clicks" in a way that doesn't acumulate info on the screen making it 
 messy and deorganized.*/
-
-$(".cert-list").hide();
-$(".soft-list").hide();
-$(".info-container").hide();
+$("#v-pills-vmw").show();
 $("#tech-skills-tech").click(function(){
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".info-container").show();
     $("#v-pills-vmw").show();
     $("#v-pills-dell").hide();
     $("#v-pills-fujitsu").hide();
@@ -109,10 +104,6 @@ $("#tech-skills-tech").click(function(){
     $("#v-pills-cisco").hide();
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 $("#v-pills-windows-tab").click(function(){
     $("#v-pills-dell").hide();
@@ -122,11 +113,6 @@ $("#v-pills-windows-tab").click(function(){
     $("#v-pills-windows").show();
     $("#v-pills-hp").hide();
     $("#v-pills-vmw").hide();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 $("#v-pills-hp-tab").click(function(){
     $("#v-pills-dell").hide();
@@ -136,11 +122,6 @@ $("#v-pills-hp-tab").click(function(){
     $("#v-pills-windows").hide();
     $("#v-pills-hp").show();
     $("#v-pills-vmw").hide();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 $("#v-pills-dell-tab").click(function(){
     $("#v-pills-dell").show();
@@ -150,11 +131,6 @@ $("#v-pills-dell-tab").click(function(){
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
     $("#v-pills-vmw").hide();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 $("#v-pills-fujitsu-tab").click(function(){
     $("#v-pills-dell").hide();
@@ -164,11 +140,6 @@ $("#v-pills-fujitsu-tab").click(function(){
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
     $("#v-pills-vmw").hide();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 $("#v-pills-ibm-tab").click(function(){
     $("#v-pills-dell").hide();
@@ -178,11 +149,6 @@ $("#v-pills-ibm-tab").click(function(){
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
     $("#v-pills-vmw").hide();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 $("#v-pills-cisco-tab").click(function(){
     $("#v-pills-dell").hide();
@@ -192,11 +158,6 @@ $("#v-pills-cisco-tab").click(function(){
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
     $("#v-pills-vmw").hide();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
 });
 $("#v-pills-vmw-tab").click(function(){
     $("#v-pills-dell").hide();
@@ -206,29 +167,6 @@ $("#v-pills-vmw-tab").click(function(){
     $("#v-pills-windows").hide();
     $("#v-pills-hp").hide();
     $("#v-pills-vmw").show();
-    $(".soft-list").hide();
-    $(".cert-list").hide();
-    $("#tech-skills-tech > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
-});
-$(".soft-skills").click(function(){
-    $(".soft-list").show();
-    $(".info-container").hide();
-    $(".cert-list").hide();
-    $(".soft-skills").addClass("blue"); 
-    $(".cert-skills").removeClass("blue");
-    $(".soft-skills > h4").addClass("blue");
-    $(".cert-skills > h4").removeClass("blue");
-    $("#tech-skills-tech > h4").removeClass("blue");
-});
-$(".cert-skills").click(function(){
-    $(".soft-list").hide();
-    $(".cert-list").show();
-    $(".info-container").hide();
-    $(".cert-skills > h4").addClass("blue");
-    $(".soft-skills > h4").removeClass("blue");
-    $("#tech-skills-tech > h4").removeClass("blue");
 });
 });
 
