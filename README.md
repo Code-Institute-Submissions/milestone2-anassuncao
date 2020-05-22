@@ -82,8 +82,11 @@ It was necessary to add some media queries to allow the website to fit better in
 the perception of continuity. For bigger screens the space between the nav bar and the name and role box and between this box and the rest of the content was increased in order to fill beter the available space
 and avoid blank space on the bottom of the page.
 
-For testing the email, I've filled the form and sent the email. After that I've checked the my inbox and the message I've sent through the form was there, proving that it was working. I've repeated this procedure
-several times from several laptops (Apple MacBook Air 2014, LenovoXXXXX, DELLXXXXX) and phones (Apple iphone X, iphone 11 and iphone 11Pro) to make sure it works in all of them.
+For testing the email, I've filled the form and sent the email. After that I've checked my inbox and the message I've sent through the form was there, proving that it was working. I've repeated this procedure
+several times from several laptops (Apple MacBook Air 2014, Lenovo from 2020, HP ProBook 430G4) and phones (Apple iphone X, iphone 11 and iphone 11Pro) to make sure it works in all of them. Also using different
+browsers: Safari, Chrome and Firefox.
+
+The mentioned above laptops, phones and browsers were also used to manually test the website completely.
 
 
 

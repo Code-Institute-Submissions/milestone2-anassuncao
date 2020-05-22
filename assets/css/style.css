@@ -6,7 +6,7 @@ body {
 }
 
 .all-page-content {
-    background-image: url("../images/servers.jpg");
+    background: url("../images/servers.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
